@@ -65,6 +65,16 @@ export class MasterViewComponent implements OnInit, OnDestroy {
   }
 
   private getSeries(): ApexAxisChartSeries {
+
+    // When series are set on this way, the stacked and stackType properties work.
+    // return [{
+    //   name: 'Series1',
+    //   data: [44, 55, 41]
+    // }, {
+    //   name: 'Series2',
+    //   data: [53, 32, 33]
+    // }];
+
     return [
       {
         name: 'TotalWorldBoxOfficeRevenue',
